@@ -15,7 +15,7 @@ print(hangman_art.logo)
 
 
 random_word = random.choice(word_list.word_list)
-print(f"random word: {random_word}")
+print(f"random word starts with : {random_word[0]}")
 word_length = len(random_word)
 
 guess_list=[]
@@ -54,4 +54,5 @@ while not end_game:
         end_game = True
         print(f"Random word chosen is {''.join(guess_list)}")
         print("you Win")
+print(f"random chosen word: {random_word}")
 print("end game")
